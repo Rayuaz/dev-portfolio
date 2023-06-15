@@ -1,0 +1,284 @@
+@import "../styles/variables";
+@import "../styles/breakpoints";
+
+#background {
+    width: 100vw;
+    height: 100dvh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#sky {
+    height: 50dvh;
+    background: linear-gradient(180deg, $primaryDark1 0%, $primaryDark3 100%);
+    position: relative;
+    z-index: 1;
+
+    #moon {
+        position: absolute;
+        left: calc(50% - 15dvh);
+        top: calc(50% - 15dvh);
+        z-index: 0;
+
+        height: 30dvh;
+        aspect-ratio: 1 / 1;
+        border-radius: 100%;
+
+        background: linear-gradient(180deg, $secondary 0%, #a057ff00 100%);
+        background: $secondary;
+        box-shadow: 0 0 2vw 0 $secondary;
+        filter: blur(5px);
+    }
+
+    svg {
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        @include media("<desktop") {
+            width: 200vw;
+            left: -50vw;
+            transform-origin: bottom;
+            transform: scaleY(1.5);
+        }
+    }
+
+    #mountain-background {
+        z-index: 1;
+        fill: $primaryDark2;
+        filter: blur(2px);
+    }
+
+    #mountain-foreground {
+        z-index: 3;
+        filter: blur(1px);
+    }
+}
+
+#vignette {
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100dvh;
+    background: radial-gradient(circle, $primaryDark1Alpha0 0%, $primaryDark1 90%);
+    backdrop-filter: blur(8px);
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 100) 80%);
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 100) 80%);
+}
+
+#horizon-line {
+    position: absolute;
+    top: calc(50% - 6px);
+    z-index: 2;
+    left: 0;
+
+    width: 110vw;
+    height: 12px;
+    margin-left: -5vw;
+
+    border-radius: 100%;
+
+    background: $primaryLight;
+    background: linear-gradient(
+        90deg,
+        $primaryLightAlpha40 0%,
+        $primaryLight 45%,
+        white 50%,
+        $primaryLight 55%,
+        $primaryLightAlpha40 100%
+    );
+    box-shadow: 0px 0px 25px 10px $primary;
+
+    filter: blur(2px);
+}
+
+#horizon-light-1 {
+    width: 70vw;
+    height: 15dvh;
+    position: absolute;
+    left: 15vw;
+    top: calc(50% - 7.5dvh);
+    background: $primary;
+    border-radius: 100%;
+    filter: blur(5vw);
+    z-index: 0;
+    opacity: 0.7;
+}
+
+#horizon-light-2 {
+    width: 90vw;
+    height: 5dvh;
+    position: absolute;
+    left: 5vw;
+    top: calc(50% - 2.5dvh);
+    background: $primary;
+    border-radius: 100%;
+    filter: blur(1vw);
+    z-index: 0;
+}
+
+#grid-light {
+    position: absolute;
+    z-index: 0;
+    top: calc(50% - 150vw);
+    left: -50vw;
+    width: 200vw;
+    height: 200vw;
+    border-radius: 100%;
+    background: radial-gradient(circle, $primary 0%, $primaryAlpha0 55%),
+        radial-gradient(circle, $primary 0%, $primaryAlpha0 40%),
+        radial-gradient(circle, $primary 0%, $primaryAlpha0 40%);
+}
+
+#grid {
+    --speed: 5s;
+    --increase-vert: 0.5s;
+
+    perspective: 30dvh;
+    width: 100%;
+    height: 81dvh;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 50dvh;
+        backdrop-filter: blur(20px);
+        mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+        -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 50dvh;
+        background: $secondaryDark;
+    }
+
+    #grid-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        transform: rotateX(60deg);
+    }
+}
+.line {
+    display: block;
+    position: absolute;
+    width: 0px;
+    inset: 0;
+    border: 2px solid $primaryLight;
+    height: 100%;
+    background: $primaryLight;
+    box-shadow: 0px 0px 10px 2px $primary;
+}
+#horizontal-lines,
+#vertical-lines {
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100dvh;
+}
+#horizontal-lines {
+    .line {
+        &:nth-child(1) {
+            left: -40%;
+        }
+        &:nth-child(2) {
+            left: -20%;
+        }
+        &:nth-child(3) {
+            left: 0%;
+        }
+        &:nth-child(4) {
+            left: 20%;
+        }
+        &:nth-child(5) {
+            left: 40%;
+        }
+        &:nth-child(6) {
+            left: 60%;
+        }
+        &:nth-child(7) {
+            left: 80%;
+        }
+        &:nth-child(8) {
+            left: 100%;
+        }
+        &:nth-child(9) {
+            left: 120%;
+        }
+        &:nth-child(10) {
+            left: 140%;
+        }
+    }
+}
+
+#vertical-lines {
+    .line {
+        animation: move var(--speed) infinite linear;
+        width: 200%;
+        left: -50%;
+        height: 0px;
+
+        &:nth-child(1) {
+            animation: none;
+            opacity: 0.7;
+        }
+        &:nth-child(2) {
+            animation-delay: var(--increase-vert);
+        }
+        &:nth-child(3) {
+            animation-delay: calc(var(--increase-vert) * 2);
+        }
+        &:nth-child(4) {
+            animation-delay: calc(var(--increase-vert) * 3);
+        }
+        &:nth-child(5) {
+            animation-delay: calc(var(--increase-vert) * 4);
+        }
+        &:nth-child(6) {
+            animation-delay: calc(var(--increase-vert) * 5);
+        }
+        &:nth-child(7) {
+            animation-delay: calc(var(--increase-vert) * 6);
+        }
+        &:nth-child(8) {
+            animation-delay: calc(var(--increase-vert) * 7);
+        }
+        &:nth-child(9) {
+            animation-delay: calc(var(--increase-vert) * 8);
+        }
+        &:nth-child(10) {
+            animation-delay: calc(var(--increase-vert) * 9);
+        }
+    }
+}
+
+@keyframes move {
+    from {
+        top: 0%;
+        opacity: 0.8;
+    }
+    to {
+        top: 100%;
+        opacity: 1;
+    }
+}

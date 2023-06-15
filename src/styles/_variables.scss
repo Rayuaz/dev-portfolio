@@ -1,0 +1,16 @@
+$primary: hsl(295, 82%, 57%);
+$primaryLight: hsl(295, 100%, 88%);
+$primaryDark1: hsl(310, 100%, 4%);
+$primaryDark2: hsl(310, 100%, 7%);
+$primaryDark3: hsl(310, 100%, 15%);
+
+$primaryAlpha0: hsla(295, 82%, 57%, 0);
+$primaryLightAlpha40: hsla(295, 100%, 88%, 0.4);
+$primaryDark1Alpha0: hsla(310, 100%, 4%, 0);
+
+$secondary: hsl(266, 100%, 67%);
+$secondaryLight: hsl(266, 100%, 75%);
+$secondaryDark: hsl(266, 100%, 9%);
+
+$shadowPrimary: 0px 0px 10px $primary;
+$shadowSecondary: 0px 0px 10px $secondary;
