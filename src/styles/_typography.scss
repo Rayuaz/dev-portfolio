@@ -7,12 +7,31 @@ h1,
 h2 {
     font-family: "Alata";
     font-size: 4.25rem;
+    font-size: 5vw;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    @include media("<desktop") {
+        font-size: 12vw;
+    }
 }
 
 h3 {
     font-size: 3.125rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+
+    @include media("<desktop") {
+        line-break: anywhere;
+        font-size: 2.3rem;
+    }
 }
 
 p {
     font-size: 1.5625rem;
+
+    @include media("<desktop") {
+        font-size: 1.25rem;
+    }
 }

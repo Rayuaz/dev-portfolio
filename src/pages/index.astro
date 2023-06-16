@@ -1,15 +1,108 @@
 ---
-import i18next, { t } from "i18next";
+import { t } from "i18next";
+import { Image } from "@astrojs/image/components";
 
 import Layout from "../layouts/Layout.astro";
-import Background from "../components/Background.astro";
+import Background2 from "../components/Background2.astro";
 ---
 
 <Layout title="Alan Fernandes - Frontend Developer">
-    <header>
-        <h1>Alan Fernandes</h1>
+    <header class="header">
+        <h1 class="section-title">Alan Fernandes</h1>
         <p class="subtitle">{t("home.title")}</p>
     </header>
-    <main><p>asga</p></main>
-    <Background />
+
+    <main>
+        <!-- About me -->
+
+        <h2 class="screen-reader">{t("home.about.screenReader")}</h2>
+        <section id="about">
+            <div class="windows">
+                <div class="window image">
+                    <h3>./{t("home.image.title")}.jpg</h3>
+                    <Image
+                        src="src/images/my_ugly_mug.jpg"
+                        alt={t("home.image.alt")}
+                        width={350}
+                        height={350}
+                        format="webp"
+                        quality={75}
+                    />
+                </div>
+                <div class="window">
+                    <h3>./{t("home.about.title")}.jpg</h3>
+                    <p>{t("home.about.content")}</p>
+                </div>
+                <div class="window">
+                    <h3>./{t("home.skills.title")}.jpg</h3>
+                    <p>{t("home.skills.content")}</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+
+        <div class="header">
+            <h2 class="section-title">{t("home.projects.title")}</h2>
+        </div>
+        <section id="projects">
+            <!-- Project 1 -->
+
+            <div class="project">
+                <div class="window image">
+                    <Image
+                        src={`src/images/${t("home.projects.project1.image")}`}
+                        alt={t("home.projects.project1.imageAlt")}
+                        width={350}
+                        height={350}
+                        format="webp"
+                        quality={85}
+                    />
+                </div>
+                <div class="window">
+                    <h3>./{t("home.projects.project1.title")}.html</h3>
+                    <p>{t("home.projects.project1.description")}</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+
+            <div class="project">
+                <div class="window image">
+                    <Image
+                        src={`src/images/${t("home.projects.project2.image")}`}
+                        alt={t("home.projects.project2.imageAlt")}
+                        width={350}
+                        height={350}
+                        format="webp"
+                        quality={85}
+                    />
+                </div>
+                <div class="window">
+                    <h3>./{t("home.projects.project2.title")}.html</h3>
+                    <p>{t("home.projects.project2.description")}</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+
+            <div class="project">
+                <div class="window image">
+                    <Image
+                        src={`src/images/${t("home.projects.project3.image")}`}
+                        alt={t("home.projects.project3.imageAlt")}
+                        width={350}
+                        height={350}
+                        format="webp"
+                        quality={85}
+                    />
+                </div>
+                <div class="window">
+                    <h3>./{t("home.projects.project3.title")}.html</h3>
+                    <p>{t("home.projects.project3.description")}</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Background2 />
 </Layout>
