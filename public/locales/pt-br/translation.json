@@ -1,4 +1,9 @@
 {
+    "meta": {
+        "title": "Alan Fernandes - Desenvolvedor Frontend",
+        "description": "Oi, eu sou o Alan! Sou desenvolvedor frontend de Curitiba, com experiência em UX, e desenvolvedor de sites estáticos.",
+        "cover": "cover_br.webp"
+    },
     "home": {
         "title": "Desenvolvedor Frontend",
         "nav": {

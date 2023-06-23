@@ -29,12 +29,20 @@ nav {
 
     ul {
         display: flex;
-        gap: 1rem;
+
+        li {
+            padding: 0 0.5rem;
+            line-height: 0.9;
+        }
     }
 
     #languages {
         display: flex;
-        gap: 1rem;
+        gap: 0.5rem;
+
+        li:not(:last-child) {
+            border-right: solid 2px white;
+        }
     }
 
     @include media("<desktop") {

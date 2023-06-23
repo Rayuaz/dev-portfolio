@@ -3,6 +3,7 @@
     font-weight: 400;
     src: url(../fonts/alata-regular-webfont.woff2) format("woff2"),
         url(../fonts/alata-regular-webfont.woff) format("woff");
+    font-display: block;
 }
 
 @font-face {
@@ -10,4 +11,5 @@
     font-weight: 400;
     src: url(../fonts/vt323-regular-webfont.woff2) format("woff2"),
         url(../fonts/vt323-regular-webfont.woff) format("woff");
+    font-display: block;
 }

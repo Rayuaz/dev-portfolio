@@ -6,7 +6,9 @@ export interface Props {
 const { title } = Astro.props;
 
 import i18next, { t } from "i18next";
+import { HeadHrefLangs } from "astro-i18next/components";
 
+import "../styles/fonts.scss";
 import "../styles/main.scss";
 ---
 
@@ -14,11 +16,27 @@ import "../styles/main.scss";
 <html lang={i18next.language}>
     <head>
         <meta charset="UTF-8" />
-        <meta name="description" content="Astro description" />
+        <meta name="description" content={t("meta.description")} />
+        <meta name="author" content="Alan Fernandes" />
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
+        <HeadHrefLangs />
+
+        <meta property="og:title" content={title} />
+        <meta property="og:url" content="https://portfolio.alanfernandes.dev" />
+        <meta property="og:image" content={`https://portfolio.alanfernandes.dev/${t("meta.cover")}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content={t("meta.description")} />
+        <meta property="og:locale" content={i18next.language} />
+
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:url" content="https://portfolio.alanfernandes.dev" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content={`https://portfolio.alanfernandes.dev/${t("meta.cover")}`} />
+        <meta property="twitter:image:alt" content={title} />
+        <meta property="twitter:description" content={t("meta.description")} />
     </head>
     <body>
         <slot />

@@ -1,4 +1,9 @@
 {
+    "meta": {
+        "title": "Alan Fernandes - Frontend Developer",
+        "description": "Hi, I'm Alan! I'm a frontend developer based in Curitiba, Brazil, experienced with UX and developing static websites.",
+        "cover": "cover_en.webp"
+    },
     "home": {
         "title": "Frontend developer",
         "nav": {
