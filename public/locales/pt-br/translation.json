@@ -49,6 +49,11 @@
                 "description": "Um habit tracker que permite que o usuário customize os seus objetivos.",
                 "image": "track_it.webp"
             }
+        },
+        "contact": {
+            "title": "Entre em contato",
+            "email": "contato@alanfernandes.dev",
+            "phone": "41 98714-1567"
         }
     }
 }
