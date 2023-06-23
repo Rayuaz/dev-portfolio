@@ -1,10 +1,25 @@
 {
     "home": {
         "title": "Desenvolvedor Frontend",
+        "nav": {
+            "about": {
+                "short": "Sobre",
+                "long": "Sobre mim"
+            },
+            "projects": {
+                "short": "Projetos",
+                "long": "Meus projetos"
+            },
+            "contact": {
+                "short": "Contato",
+                "long": "Entre em contato"
+            },
+            "languageOptions": "Linguagem"
+        },
         "about": {
             "title": "sobre_mim",
             "screenReader": "Sobre mim",
-            "content": "Sou um desenvolvedor front-end de Curitiba, bacharelado em design pela UTFPR. Comecei minha carreira como UX designer, mas sempre tive interesse na área de desenvolvimento web, tendo trabalhado como dessenvolvedor freelancer por 5 anos, criando landing pages e sites corporativos. Até mesmo no meu trabalho como UX, eu sempre trabalhei muito mais voltado para a área técnica, como documentação de projetos e arquitetura da informação -- eu até fiz o design e gerenciamento de projeto de uma API. Esse background de UX me proporciona a habilidade de fazer a ponte perfeita entre o time de design e o time de desenvolvimento, assegurando que o design seja implementado nos seus mínimos detalhes, e que eu a comunicação com o time de design seja eficiente quando mudanças forem necessárias."
+            "content": "Sou um desenvolvedor front-end de Curitiba, bacharelado em design pela UTFPR. Comecei minha carreira como UX designer, mas sempre tive interesse na área de desenvolvimento web, tendo trabalhado como dessenvolvedor freelancer por 5 anos, criando landing pages e sites corporativos. Até mesmo no meu trabalho como UX, eu sempre trabalhei muito mais voltado para a área técnica, como documentação de projetos e arquitetura da informação — eu até fiz o design e gerenciamento de projeto de uma API. Esse background de UX me proporciona a habilidade de fazer a ponte perfeita entre o time de design e o time de desenvolvimento, assegurando que o design seja implementado nos seus mínimos detalhes, e que eu a comunicação com o time de design seja eficiente quando mudanças forem necessárias."
         },
         "skills": {
             "title": "minhas_habilidades",
@@ -12,7 +27,7 @@
         },
         "image": {
             "title": "minha_carinha",
-            "alt": "Uma montagem em estilo vapor wave onde eu estou segurando um golfinho"
+            "alt": "Uma montagem em estilo vapor wave onde eu estou segurando um golfinho."
         },
         "projects": {
             "title": "Meus Projetos",

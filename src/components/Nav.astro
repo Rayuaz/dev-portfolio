@@ -1,0 +1,21 @@
+---
+import i18next, { t } from "i18next";
+
+import "./Nav.scss";
+---
+
+<nav>
+    <ul id="shortcuts">
+        <li><a href="#about">{t("home.nav.about.short")}</a></li>
+        <li><a href="#projects-header">{t("home.nav.projects.short")}</a></li>
+        <li><a href="#contact">{t("home.nav.contact.short")}</a></li>
+    </ul>
+    <div id="languages">
+        <p>{t("home.nav.languageOptions")}:</p>
+        <ul>
+            <li><a href="/en" class={i18next.language === "en" && "highlight"}>EN</a></li>
+            <span class="divider"></span>
+            <li><a href="/" class={i18next.language === "pt-BR" && "highlight"}>PT</a></li>
+        </ul>
+    </div>
+</nav>

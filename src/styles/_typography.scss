@@ -36,3 +36,14 @@ a {
         font-size: 1.25rem;
     }
 }
+
+a:not(.button) {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    text-shadow: $shadowSecondary;
+
+    &:hover {
+        color: $secondaryLight;
+    }
+}

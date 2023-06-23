@@ -4,8 +4,21 @@
 @import "breakpoints";
 @import "typography";
 
-body {
+html {
     background: $primaryDark2;
+    scroll-behavior: smooth;
+}
+
+main {
+    padding-inline: 1rem;
+    max-width: $maxWidth;
+    margin-inline: auto;
+    position: relative;
+}
+
+section {
+    position: relative;
+    z-index: 6;
 }
 
 ::-webkit-scrollbar {
@@ -30,13 +43,6 @@ body {
     scrollbar-color: $primary $primaryDark3;
 }
 
-main {
-    padding-inline: 1rem;
-    max-width: calc(1070px + 2rem);
-    margin-inline: auto;
-    position: relative;
-}
-
 img {
     border: 2px solid $primary;
 }
@@ -51,11 +57,13 @@ img {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+    opacity: 0;
 }
 
-section {
-    position: relative;
-    z-index: 6;
+.divider {
+    width: 2px;
+    background: white;
+    margin-top: 0.2em;
 }
 
 .window {
@@ -87,6 +95,10 @@ section {
     &:hover {
         background: $secondary;
     }
+
+    @include media("<desktop") {
+        font-size: 1.5rem;
+    }
 }
 
 .header {
@@ -97,11 +109,10 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50lvh;
 
     @include media("<desktop") {
         height: 40svh;
-        margin-bottom: 60lvh;
+        margin-bottom: 5svh;
     }
 
     p {
@@ -116,14 +127,68 @@ section {
     }
 }
 
+#shortcut-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: calc($maxWidth / 2);
+    min-height: 40svh;
+
+    margin-inline: auto;
+    margin-bottom: 10svh;
+
+    transition: opacity 0.3s;
+
+    &:not(.show) {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    @include media("<desktop") {
+        margin-bottom: 15svh;
+    }
+
+    .button {
+        margin-bottom: 1rem;
+        background: $primaryDark2Aplha75;
+        border-color: $primary;
+        box-shadow: $shadowPrimary;
+        padding-inline: 3rem;
+
+        &:hover {
+            background: $primary;
+        }
+    }
+
+    #language-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        margin-top: 1rem;
+
+        ul {
+            display: flex;
+            gap: 0.5rem;
+        }
+    }
+}
+
 #about {
     min-height: 100lvh;
     display: flex;
     align-items: center;
     margin-bottom: 30lvh;
 
+    @include media("<desktop") {
+        padding-top: 4rem;
+    }
+
     img {
-        max-width: 100% !important;
+        width: 100% !important;
         height: auto !important;
     }
 
@@ -202,17 +267,6 @@ section {
             margin-bottom: 1em;
         }
 
-        a:not(.button) {
-            width: 100%;
-            text-align: center;
-            margin-top: 1em;
-            text-shadow: $shadowSecondary;
-
-            &:hover {
-                color: $secondaryLight;
-            }
-        }
-
         .description {
             display: flex;
             flex-direction: column;
@@ -231,6 +285,10 @@ section {
                 h3 {
                     display: none;
                 }
+            }
+
+            .button {
+                margin-top: 2rem;
             }
         }
     }
