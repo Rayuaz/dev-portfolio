@@ -25,6 +25,11 @@
     background: $secondary;
     box-shadow: 0 0 2vw 0 $secondary;
     filter: blur(5px);
+
+    @include media("<desktop") {
+        top: auto;
+        bottom: 65svh;
+    }
 }
 
 .mountain {
