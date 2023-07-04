@@ -312,6 +312,10 @@
 #dummy-lines {
     animation: move calc(var(--speed) * 0.81) forwards linear;
 
+    @include media("<desktop") {
+        animation: none;
+    }
+
     .line {
         &:nth-child(1) {
             top: 10%;
@@ -345,6 +349,10 @@
 
 #vertical-lines .line {
     animation: move var(--speed) infinite linear;
+
+    @include media("<desktop") {
+        animation: none;
+    }
 
     &:nth-child(1) {
         animation: none;
