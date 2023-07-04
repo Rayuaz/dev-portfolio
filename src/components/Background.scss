@@ -389,3 +389,10 @@
         opacity: 1;
     }
 }
+
+@media (prefers-reduced-motion) {
+    #vertical-lines .line,
+    #dummy-lines {
+        animation: none;
+    }
+}
