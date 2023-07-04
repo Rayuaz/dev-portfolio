@@ -8,7 +8,7 @@ import Nav from "../../components/Nav.astro";
 changeLanguage("en");
 ---
 
-<Layout title="Alan Fernandes - Frontend Developer">
+<Layout title={t("meta.title")}>
     <Nav />
 
     <header class="header">
@@ -30,7 +30,6 @@ changeLanguage("en");
                 <p>{t("home.nav.languageOptions")}:</p>
                 <ul>
                     <li><a href="/en" class={i18next.language === "en" && "highlight"}>EN</a></li>
-                    <span class="divider"></span>
                     <li><a href="/" class={i18next.language === "pt-BR" && "highlight"}>PT</a></li>
                 </ul>
             </div>
@@ -45,7 +44,7 @@ changeLanguage("en");
                 <div class="window image">
                     <h3>./{t("home.image.title")}.jpg</h3>
                     <Image
-                        src="src/images/my_ugly_mug.jpg"
+                        src={import("@images/my_ugly_mug.jpg")}
                         alt={t("home.image.alt")}
                         width={350}
                         height={350}
@@ -57,8 +56,15 @@ changeLanguage("en");
                     <h3>./{t("home.about.title")}.jpg</h3>
                     <p>{t("home.about.content")}</p>
                 </div>
-                <div class="window">
+                <div class="window" id="skills">
                     <h3>./{t("home.skills.title")}.jpg</h3>
+                    <p class="tags">
+                        <span class="highlight">React</span>,
+                        <span class="highlight">Vue</span>,
+                        <span class="highlight">Astro</span>,
+                        <span class="highlight">Node</span>,
+                        <span class="highlight">SCSS</span>
+                    </p>
                     <p>{t("home.skills.content")}</p>
                 </div>
             </div>
@@ -76,7 +82,7 @@ changeLanguage("en");
             <div class="project">
                 <div class="window image">
                     <Image
-                        src={`src/images/${t("home.projects.project1.image")}`}
+                        src={import("@images/heros_tavern.webp")}
                         alt={t("home.projects.project1.imageAlt")}
                         width={350}
                         height={350}
@@ -104,7 +110,7 @@ changeLanguage("en");
             <div class="project">
                 <div class="window image">
                     <Image
-                        src={`src/images/${t("home.projects.project2.image")}`}
+                        src={import("@images/twilight_ui.png")}
                         alt={t("home.projects.project2.imageAlt")}
                         width={350}
                         height={350}
@@ -128,7 +134,7 @@ changeLanguage("en");
             <div class="project">
                 <div class="window image">
                     <Image
-                        src={`src/images/${t("home.projects.project3.image")}`}
+                        src={import("@images/track_it.webp")}
                         alt={t("home.projects.project3.imageAlt")}
                         width={350}
                         height={350}

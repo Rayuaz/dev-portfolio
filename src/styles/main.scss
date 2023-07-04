@@ -269,8 +269,10 @@ img {
         gap: 1rem;
         margin-bottom: 50lvh;
 
-        &:last-child {
-            margin-bottom: 0;
+        @include media(">desktop") {
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
 
         h3 {
