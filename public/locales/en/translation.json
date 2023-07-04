@@ -24,11 +24,11 @@
         "about": {
             "title": "about_me",
             "screenReader": "About me",
-            "content": "I'm a front-end dev based in Curitiba, Brazil, and bachelor of design by the Federal University of Technology of Paraná. I have worked previously as an UX designer, but I have always been attracted to web development, having worked as a freelancing web developer for 5 years, designing landing pages and corporate websites. Not only that, but in my previous UX job I did a lot of more technical work, like project documentation, and information architecture — I even got to design an API. This background in UX allows me to seamlessly bridge the gap between design and development, ensuring that the design is implemented in it's tiniest details, and that I can efficiently communicate with the design team when changes are needed."
+            "content": "I'm a frontend dev based in Curitiba, Brazil, with a bachelor's degree in design by the Federal University of Technology of Paraná. I have worked previously as an UX designer, but I have always been attracted to web development. I worked as a freelancing web developer for 3 years, designing landing pages and corporate websites. Not only that, but in my previous UX job I did a lot of more technical work, such as project documentation, and information architecture — I even got to design an API. This background in UX allows me to seamlessly bridge the gap between design and development, ensuring that the design is implemented in its tiniest details, and that I can efficiently communicate with the design team when changes are needed."
         },
         "skills": {
             "title": "my_skills",
-            "content": "From my experience developing static websites, I have a very strong knowledge of HTML and CSS (I prefer using SCSS) and vanilla JS. More recently, I started delving into Nuxt (Vue) and Astro for website development, and React for dynamic applications."
+            "content": "My experience developing static websites, provides me with have a very strong knowledge of HTML and CSS (I prefer using SCSS) and vanilla JS. More recently, I started delving into Nuxt (Vue) and Astro for website development, and React for dynamic applications."
         },
         "image": {
             "title": "my_ugly_mug",
@@ -37,7 +37,7 @@
         "projects": {
             "title": "My Projects",
             "imagesTitle": "thumbnail",
-            "buttonLabel": "See in on github",
+            "buttonLabel": "View it on github",
             "linkLabel": "See in action",
             "project1": {
                 "title": "heros_tavern",
@@ -51,7 +51,7 @@
             },
             "project3": {
                 "title": "track_it",
-                "description": "A simple habit tracker, which allows the user to customize what they want to track.",
+                "description": "A simple habit tracker which allows the user to customize what they want to track.",
                 "image": "track_it.webp"
             }
         },
