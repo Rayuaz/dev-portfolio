@@ -24,7 +24,7 @@
         "about": {
             "title": "about_me",
             "screenReader": "About me",
-            "content": "I'm a frontend dev based in Curitiba, Brazil, with a bachelor's degree in design by the Federal University of Technology of Paraná. I have worked previously as an UX designer, but I have always been attracted to web development. I worked as a freelancing web developer for 3 years, designing landing pages and corporate websites. Not only that, but in my previous UX job I did a lot of more technical work, such as project documentation, and information architecture — I even got to design an API. This background in UX allows me to seamlessly bridge the gap between design and development, ensuring that the design is implemented in its tiniest details, and that I can efficiently communicate with the design team when changes are needed."
+            "content": "I'm a frontend dev based in Curitiba, Brazil, with a bachelor's degree in design by the Federal University of Technology of Paraná. I have worked previously as a UX designer, but I have always been attracted to web development. I worked as a freelancing web developer for 3 years, designing landing pages and corporate websites. Not only that, but in my previous UX job I did a lot of more technical work, such as project documentation, and information architecture — I even got to design an API. This background in UX allows me to seamlessly bridge the gap between design and development, ensuring that the design is implemented in its tiniest details, and that I can efficiently communicate with the design team when changes are needed."
         },
         "skills": {
             "title": "my_skills",
