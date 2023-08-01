@@ -1,11 +1,11 @@
 {
     "meta": {
-        "title": "Alan Fernandes - Desenvolvedor Frontend",
-        "description": "Oi, eu sou o Alan! Sou desenvolvedor frontend de Curitiba, com experiência em UX, e desenvolvedor de sites estáticos.",
+        "title": "Alan Fernandes - Desenvolvedor Full Stack",
+        "description": "Oi, eu sou o Alan! Sou desenvolvedor frontend de Curitiba, com experiência em UX, e desenvolvimento de sites estáticos.",
         "cover": "cover_br.webp"
     },
     "home": {
-        "title": "Desenvolvedor Frontend",
+        "title": "Desenvolvedor Full Stack",
         "nav": {
             "about": {
                 "short": "Sobre",
@@ -24,7 +24,7 @@
         "about": {
             "title": "sobre_mim",
             "screenReader": "Sobre mim",
-            "content": "Sou um desenvolvedor front-end de Curitiba, com bacharelado em design pela UTFPR. Comecei minha carreira como UX designer, mas sempre tive interesse na área de desenvolvimento web. Trabalhei como dessenvolvedor freelancer por 3 anos, criando landing pages e sites corporativos. Até mesmo no meu trabalho como UX, eu sempre trabalhei muito mais voltado para a área técnica, como com documentação de projetos e arquitetura da informação — fiz até o design e gerenciamento de projeto de uma API. Esse background de UX me proporciona a habilidade de fazer a ponte perfeita entre o time de design e o time de desenvolvimento, assegurando que o design seja implementado nos seus mínimos detalhes, e que a comunicação com o time de design seja eficiente quando mudanças forem necessárias."
+            "content": "Sou um desenvolvedor full stack de Curitiba, com bacharelado em design pela UTFPR. Comecei minha carreira como UX designer, mas sempre tive interesse na área de desenvolvimento web. Trabalhei como dessenvolvedor freelancer por 3 anos, criando landing pages e sites corporativos. Até mesmo no meu trabalho como UX, sempre trabalhei muito mais voltado para a área técnica, com documentação de projetos e arquitetura da informação — fiz até o design e gerenciamento de projeto de uma API. Esse background de UX me proporciona a habilidade de fazer a ponte perfeita entre o time de design e o time de desenvolvimento, assegurando que o design seja implementado nos seus mínimos detalhes, e que a comunicação com o time de design seja eficiente quando mudanças forem necessárias."
         },
         "skills": {
             "title": "minhas_habilidades",
@@ -32,7 +32,7 @@
         },
         "image": {
             "title": "minha_carinha",
-            "alt": "Uma montagem em estilo vapor wave onde eu estou segurando um golfinho."
+            "alt": "Uma montagem em estilo vapor wave onde estou segurando um golfinho."
         },
         "projects": {
             "title": "Meus Projetos",
@@ -57,8 +57,7 @@
         },
         "contact": {
             "title": "Entre em contato",
-            "email": "contato@alanfernandes.dev",
-            "phone": "41 98714-1567"
+            "email": "contato@alanfernandes.dev"
         }
     }
 }
