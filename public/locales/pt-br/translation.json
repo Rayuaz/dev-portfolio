@@ -41,7 +41,7 @@
             "linkLabel": "Veja em ação",
             "project1": {
                 "title": "heros_tavern",
-                "description": "Um app com prompts de personagem para RPGs de mesa, que cria backgrounds dinamicamente e permite que o usuário converse com os personagens utilizando a API da Open AI.",
+                "description": "Um gerador de personagens para RPGs de mesa, que cria backgrounds dinamicamente e permite que o usuário converse com os personagens utilizando a API da OpenAI.",
                 "image": "heros_tavern.webp"
             },
             "project2": {
@@ -57,7 +57,7 @@
         },
         "contact": {
             "title": "Entre em contato",
-            "email": "contato@alanfernandes.dev"
+            "email": "alan@alanfernandes.dev"
         }
     }
 }

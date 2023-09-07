@@ -41,23 +41,23 @@
             "linkLabel": "See in action",
             "project1": {
                 "title": "heros_tavern",
-                "description": "An app with character prompts for tabletop RPGs, that dynamically creates backgrounds and lets the user chat with the character using Open AI's API.",
+                "description": "A character generator for tabletop RPGs. It uses OpenAI's API to dynamically create detailed backgrounds and allow the user to chat with the characters.",
                 "image": "heros_tavern.webp"
             },
             "project2": {
                 "title": "twilight_ui",
-                "description": "A mod for FoundryVTT that overhauls the UI and bring a many user experience improvements.",
+                "description": "A UI overhaul mod for FoundryVTT, with many use experience improvements.",
                 "image": "twilight_ui.png"
             },
             "project3": {
                 "title": "track_it",
-                "description": "A simple habit tracker which allows the user to customize what they want to track.",
+                "description": "A simple habit tracker that allows the user to customize what they want to track.",
                 "image": "track_it.webp"
             }
         },
         "contact": {
             "title": "Get in touch",
-            "email": "contact@alanfernandes.dev"
+            "email": "alan@alanfernandes.dev"
         }
     }
 }
